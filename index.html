@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 154px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: #000;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      size: 30px;
+      text-align: center;
+    }
+
+    .all{
+      background-color: #F0F1EC;
+    }
+
+    .p1{
+      background-color: #E72F24;
+    }
+
+    .p2{
+      grid-column: span 3;   
+     }
+
+    .p3{
+      grid-row: span 2;
+    }
+
+    .p4{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .p5{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .p6{
+      /* grid-column: span 2; */
+      /* grid-column-end: 2; */
+      grid-area: 4/1/5/2;
+    }
+
+    .p7{
+      background-color: #F9D01E;  
+      grid-area: 4/2/5/3;
+
+    }
+
+    .p8{
+      background-color: #232629;
+      grid-area: 4/3/5/4;
+
+    }
+
+    .p9{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+   
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+
+    <div class="all p1">part 1</div>
+    <div class="all p2">part 2</div>
+    <div class="all p3">part 3</div>
+    <div class="all p4">part 4</div>
+    <div class="all p5">part 5</div>
+    <div class="all p6">part 6</div>
+    <div class="all p7">part 7</div>
+    <div class="all p8">part 8</div>
+    <div class="all p9">part 9</div>
+ 
+  </div>
+  
+
+</body>
+
+</html>
